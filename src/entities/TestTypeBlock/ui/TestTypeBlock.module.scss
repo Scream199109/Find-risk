@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin: 40px 0;
+}
+
+.text {
+  font: var(--font-xl);
+  line-height: var(--font-line-xxl);
+  font-weight: bold;
+}

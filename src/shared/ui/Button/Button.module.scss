@@ -1,0 +1,52 @@
+.button {
+  cursor: pointer;
+  color: var(--btn-text-color);
+  padding: 7px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font: var(--font-m);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 360px;
+
+  &:hover {
+    background-color: var(--bg-btn-hover);
+
+    .addonLeft svg,
+    .addonRight svg {
+      color: var(--btn-text-color);
+    }
+  }
+
+  &:active {
+    background-color: var(--bg-btn-primary);
+  }
+}
+
+.addonLeft,
+.addonRight {
+  display: flex;
+}
+
+.clear {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.fill {
+  background: var(--bg-btn-primary);
+  color: var(--btn-text-color);
+  border: none;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.fullWidth {
+  width: 100%;
+}
